@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Contactez-nous / Inscrivez-vous</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="livres.html">Livres</a>
+        <a href="categories.html">Catégories</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+
+        <form action="#" method="post" enctype="multipart/form-data">
+
+            <fieldset>
+                <legend>1 - Vos coordonnées</legend>
+
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required autofocus maxlength="50" placeholder="Votre nom">
+                <br><br>
+
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" required maxlength="50" placeholder="Votre prénom">
+                <br><br>
+
+                <label for="date">Date de naissance :</label>
+                <input type="date" id="date" name="date">
+                <br><br>
+
+                <label for="email">Adresse email :</label>
+                <input type="email" id="email" name="email" required placeholder="exemple@email.com">
+                <br><br>
+
+                <label for="site">Site web :</label>
+                <input type="url" id="site" name="site" value="http://www." placeholder="https://monsite.com">
+                <br><br>
+
+                <label for="password">Code secret :</label>
+                <input type="password" id="password" name="password" minlength="6" maxlength="20">
+                <br><br>
+
+                Genre :
+                <input type="radio" id="homme" name="genre" value="Homme" checked>
+                <label for="homme">Homme</label>
+
+                <input type="radio" id="femme" name="genre" value="Femme">
+                <label for="femme">Femme</label>
+                <br><br>
+
+                <label for="pays">Pays :</label>
+                <select id="pays" name="pays">
+                    <option>Tunisie</option>
+                    <option>France</option>
+                    <option>Algérie</option>
+                    <option>Maroc</option>
+                    <option>Autre</option>
+                </select> 
+
+
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>2 - Informations complémentaires</legend>
+
+                <label for="telephone">Téléphone :</label>
+                <input type="tel" id="telephone" name="telephone" pattern="[0-9]{8}" placeholder="12345678">
+                <br><br>
+
+                <label for="adresse">Adresse postale :</label>
+                <input type="text" id="adresse" name="adresse" placeholder="Votre adresse">
+                <br><br>
+
+                <label for="code">Code postal :</label>
+                <input type="text" id="code" name="code" value="1000" maxlength="4">
+                <br><br>
+
+                <label for="semestre">Semestre :</label>
+                <select id="semestre" name="semestre">
+                    <option>S1</option>
+                    <option>S2</option>
+                    <option>S3</option>
+                    <option>S4</option>
+                </select>
+                <br><br>
+
+                <label for="region">Région préférée :</label>
+                <select id="region" name="region">
+                    <option>Tunis</option>
+                    <option>Sousse</option>
+                    <option>Sfax</option>
+                    <option>Djerba</option>
+                    <option>Tozeur</option>
+                </select>
+
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>3 - Goûts et centres d'intérêt</legend>
+
+                Centres d'intérêt :
+                <br>
+
+                <input type="checkbox" id="culture" name="interet" value="Culture" checked>
+                <label for="culture">Culture</label>
+
+                <input type="checkbox" id="gastronomie" name="interet" value="Gastronomie">
+                <label for="gastronomie">Gastronomie</label>
+
+                <input type="checkbox" id="plage" name="interet" value="Plage">
+                <label for="plage">Plage</label>
+
+                <input type="checkbox" id="desert" name="interet" value="Désert">
+                <label for="desert">Désert</label>
+
+                <input type="checkbox" id="histoire" name="interet" value="Histoire">
+                <label for="histoire">Histoire</label>
+
+                <br><br>
+
+                <label for="niveau">Niveau en HTML :</label>
+                <input type="range" id="niveau" name="niveau" min="0" max="100" step="10">
+                <br><br>
+
+                <label for="note">Note de satisfaction :</label>
+                <input type="number" id="note" name="note" min="1" max="10" step="1">
+                <br><br>
+
+                <label for="message">Message / Commentaire :</label>
+                <br>
+                <textarea id="message" name="message" rows="5" cols="40" placeholder="Ecrivez votre message ici"></textarea>
+
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>4 - Photo</legend>
+
+                <label for="photo">Photo de profil :</label>
+                <input type="file" id="photo" name="photo" accept="image/*">
+
+            </fieldset>
+
+            <br>
+
+            <input type="submit" value="Envoyer">
+            <input type="reset" value="Effacer">
+
+        </form>
+
+        <br>
+
+        <a href="index.html">Retour à l'accueil</a>
+
+    </main>
+
+    <footer>
+        <p>Ma bibliothèque - Tous droits réservés</p>
+    </footer>
+
+</body>
+</html>
+
+    
