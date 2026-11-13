@@ -1,35 +1,134 @@
+
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
-    <title>Ma bibliothéque-livres</title>
+    <title>Ma bibliothèque - Notre collection</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+
     <header>
-        <h1>nos livres</h1>
+        <h1>Bienvenue dans notre bibliothèque</h1>
+        <p>Un monde de lecture, de culture et d'imagination</p>
     </header>
+
+    <!-- Barre de navigation -->
     <nav>
-     <a href="index.html">accueil</a>|
-        <a href="livres.html">livres</a>|
-        <a href="categories.html">categories</a>|
-        <a href="Auteurs.html">Auteurs</a>| 
-        <a href="contact.html">contact</a> 
-         
+        <a href="index.html">Accueil</a> |
+        <a href="livres.html">Livres</a> |
+        <a href="categories.html">Catégories</a> |
+        <a href="Auteurs.html">Auteurs</a> |
+        <a href="produits.html">Nouveautés</a> |
+        <a href="contact.html">Contact</a>
     </nav>
+
     <main>
-        <h1>"listes de livres"</h1>
-        <h2>le petit prince</h2>
-        <p>auteur:Antoine de saint-Exupéry</p>
-        <img src="images/livre1.jpg">
-        <h2>l'Etranger</h2>
-        <p>Auteur:Albert camus</p>
-        <img src="images/livre2.jpg">
-        <h2>les misérables</h2>
-        <p>Auteur:Victor Hugo</p>
-         <img src="images/livre 3.jpg">
+
+        <section class="introduction">
+            <h2>Explorez notre collection</h2>
+
+            <p>
+                La lecture est une porte ouverte sur le monde.
+                Notre bibliothèque vous propose une sélection
+                de livres fascinants pour découvrir de nouvelles
+                idées, vivre des aventures et enrichir vos connaissances.
+            </p>
+        </section>
+
+        <section class="liste-livres">
+
+            <h2>Nos livres préférés</h2>
+
+            <article class="carte-livre">
+                <img src="images/livre1.jpg"
+                alt="Couverture du Petit Prince">
+
+                <div>
+                    <h3>Le Petit Prince</h3>
+
+                    <p><strong>Auteur :</strong> Antoine de Saint-Exupéry</p>
+
+                    <p><strong>Catégorie :</strong> Conte philosophique</p>
+
+                    <p>
+                        Un magnifique récit qui raconte les aventures
+                        d'un petit prince voyageant de planète en planète.
+                        Une histoire pleine de sagesse, d'amitié et
+                        d'imagination.
+                    </p>
+
+                    <a href="Auteurs.html">Découvrir l'auteur</a>
+                </div>
+            </article>
+
+            <article class="carte-livre">
+                <img src="images/livre2.jpg"
+                alt="Couverture de L'Étranger">
+
+                <div>
+                    <h3>L'Étranger</h3>
+
+                    <p><strong>Auteur :</strong> Albert Camus</p>
+
+                    <p><strong>Catégorie :</strong> Roman philosophique</p>
+
+                    <p>
+                        Un roman célèbre qui présente l'histoire
+                        de Meursault et invite le lecteur à réfléchir
+                        sur la société, la vie et la condition humaine.
+                    </p>
+
+                    <a href="Auteurs.html">Découvrir l'auteur</a>
+                </div>
+            </article>
+
+            <article class="carte-livre">
+                <img src="images/livre 3.jpg"
+                alt="Couverture des Misérables">
+
+                <div>
+                    <h3>Les Misérables</h3>
+
+                    <p><strong>Auteur :</strong> Victor Hugo</p>
+
+                    <p><strong>Catégorie :</strong> Roman classique</p>
+
+                    <p>
+                        Un chef-d'œuvre de la littérature française
+                        qui raconte une histoire touchante autour
+                        de la justice, de l'amour, de la liberté
+                        et de l'espoir.
+                    </p>
+
+                    <a href="Auteurs.html">Découvrir l'auteur</a>
+                </div>
+            </article>
+
+        </section>
+
+    
+        <section class="invitation">
+            <h2>La lecture, un plaisir sans limites !</h2>
+
+            <p>
+                Venez découvrir notre bibliothèque et laissez-vous
+                emporter par la magie des livres.
+            </p>
+
+            <a href="contact.html">Contactez-nous</a>
+        </section>
+
     </main>
-     <footer>
-        <p>~ 2026 ma bibliothéque</p>
+
+
+    <footer>
+        <p>&copy; 2026 Ma bibliothèque - Tous droits réservés</p>
+        <p>Lire, découvrir et partager.</p>
     </footer>
+
 </body>
 </html>
